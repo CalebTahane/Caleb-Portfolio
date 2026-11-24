@@ -120,9 +120,10 @@ body {
 }
 
 /* RESPONSIVENESS OF THE NAVIGATION PANEL */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .navbar {
-    gap: 14px;
+    gap: 16px;
+    padding: 0 4%;
   }
 
   .nav-left {
@@ -136,30 +137,16 @@ body {
   .nav-links li a {
     font-size: 14px;
   }
-}
 
-@media (max-width: 900px) {
-  .navbar {
-    padding: 0 4%;
-  }
-
-  .logo a img {
-    height: 38px;
-  }
-
-  .nav-links {
-    gap: 10px;
-  }
-
-  .nav-links li a {
-    font-size: 13px;
+  .nav-button a {
+    padding: 11px 20px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 992px) {
   .navbar {
     height: auto;
-    min-height: 70px;
+    min-height: 74px;
     padding: 10px 4%;
     flex-wrap: wrap;
     row-gap: 10px;
@@ -174,7 +161,7 @@ body {
   }
 
   .logo a img {
-    height: 34px;
+    height: 38px;
   }
 
   .nav-button {
@@ -188,8 +175,41 @@ body {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px 14px;
+    gap: 10px 16px;
     margin: 0;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+  }
+
+  .nav-button a {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding-top: 160px;
+  }
+
+  .design-hero {
+    padding-top: 140px;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    min-height: 70px;
+    padding: 10px 4%;
+    row-gap: 8px;
+  }
+
+  .logo a img {
+    height: 34px;
+  }
+
+  .nav-links {
+    gap: 8px 12px;
   }
 
   .nav-links li a {
@@ -197,7 +217,7 @@ body {
   }
 
   .nav-button a {
-    padding: 10px 16px;
+    padding: 9px 14px;
     font-size: 12px;
   }
 
@@ -207,6 +227,56 @@ body {
 
   .design-hero {
     padding-top: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 4%;
+  }
+
+  .logo a img {
+    height: 30px;
+  }
+
+  .nav-links {
+    gap: 8px 10px;
+  }
+
+  .nav-links li a {
+    font-size: 12px;
+  }
+
+  .nav-button a {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .hero {
+    padding-top: 165px;
+  }
+
+  .design-hero {
+    padding-top: 145px;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar {
+    padding: 8px 3%;
+  }
+
+  .nav-links {
+    gap: 6px 8px;
+  }
+
+  .nav-links li a {
+    font-size: 11px;
+  }
+
+  .nav-button a {
+    padding: 7px 10px;
+    font-size: 10px;
   }
 }
 
